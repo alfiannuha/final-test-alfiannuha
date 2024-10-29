@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "@/root/*": ["./*"],
+      "@/*": ["./_app/*"],
+      "@/image/*": ["./_app/assets/img/*"],
+      "@/helper/*": ["./_app/helpers/*"],
+      "@/layout/*": ["./_app/components/_layouts/*"],
+      "@/atoms/*": ["./_app/components/atoms/*"],
+      "@/molecules/*": ["./_app/components/molecules/*"],
+      "@/organisms/*": ["./_app/components/organisms/*"],
+      "@/ui/*": ["./_app/components/ui/*"],
+      // service (remote)
+      "@/services_remote/*": ["./_app/services/remote/*"],
+
+      // service (local)
+      "@/services_local/*": ["./_app/services/local/*"],
+
+      // service (local)
+      "@/services_state/*": ["./_app/services/state/*"]
+    }
+  }
+}

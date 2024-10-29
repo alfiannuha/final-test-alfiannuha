@@ -1,0 +1,33 @@
+{
+  "globals": {
+    "createRef": true,
+    "formatCurrency": true,
+    "forwardRef": true,
+    "http": true,
+    "lazy": true,
+    "memo": true,
+    "navigate": true,
+    "startTransition": true,
+    "useCallback": true,
+    "useContext": true,
+    "useDebugValue": true,
+    "useDeferredValue": true,
+    "useEffect": true,
+    "useHttp": true,
+    "useHttpMutation": true,
+    "useId": true,
+    "useImperativeHandle": true,
+    "useInsertionEffect": true,
+    "useLayoutEffect": true,
+    "useMemo": true,
+    "usePathname": true,
+    "useReducer": true,
+    "useRef": true,
+    "useSearchParams": true,
+    "useSearchParamsState": true,
+    "useState": true,
+    "useSyncExternalStore": true,
+    "useTransition": true,
+    "useTranslation": true
+  }
+}
