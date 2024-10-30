@@ -1,4 +1,4 @@
 import "../../../globals.css";
-import Layout from "@/layout/layout";
+import Layout from "@/layout/Layout";
 
 export default Layout;

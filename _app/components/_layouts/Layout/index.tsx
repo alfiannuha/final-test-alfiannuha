@@ -7,17 +7,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import LayoutPublic from "./layout";
 
 const fonts = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
-const Layout: React.FC<any> = async ({
-  children, 
-}) => {
+const Layout: React.FC<any> = async ({ children }) => {
   const locale = await getLocale();
   const messages = await getMessages();
   return (
@@ -26,9 +25,11 @@ const Layout: React.FC<any> = async ({
         <title>{process.env.NEXT_PUBLIC_APP_NAME ?? "My App"}</title>
       </head>
       <body className={fonts.className}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <LayoutPublic>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </LayoutPublic>
       </body>
     </html>
   );
