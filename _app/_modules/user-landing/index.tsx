@@ -32,11 +32,17 @@ const UserLanding: React.FC = () => {
 
         <SectionIncridibleDeals />
 
-        <SectionEvents />
+        <section id="events">
+          <SectionEvents />
+        </section>
 
-        <SectionPromotions />
+        <section id="promotions">
+          <SectionPromotions />
+        </section>
 
-        <SectionHotels />
+        <section id="hotels">
+          <SectionHotels />
+        </section>
       </div>
     </div>
   );

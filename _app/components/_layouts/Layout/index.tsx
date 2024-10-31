@@ -20,7 +20,7 @@ const Layout: React.FC<any> = async ({ children }) => {
   const locale = await getLocale();
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <head>
         <title>{process.env.NEXT_PUBLIC_APP_NAME ?? "My App"}</title>
       </head>

@@ -10,15 +10,9 @@ const LayoutPublic = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      {pathname.includes("auth") ? (
-        <>{children}</>
-      ) : (
-        <>
-          {pathname !== "/" && <Navbar />}
-          {children}
-          <Footer />
-        </>
-      )}
+      <Navbar />
+      {children}
+      <Footer />
     </>
   );
 };
