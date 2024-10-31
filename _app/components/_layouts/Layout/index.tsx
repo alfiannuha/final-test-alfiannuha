@@ -22,7 +22,9 @@ const Layout: React.FC<any> = async ({ children }) => {
   return (
     <html lang={locale} className="scroll-smooth">
       <head>
-        <title>{process.env.NEXT_PUBLIC_APP_NAME ?? "My App"}</title>
+        <title>
+          {process.env.NEXT_PUBLIC_APP_NAME ?? "Mandalika Blissful"}
+        </title>
       </head>
       <body className={fonts.className}>
         <LayoutPublic>
